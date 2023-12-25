@@ -1,0 +1,68 @@
+.movieImageInfo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.imgFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 450px;
+  width: 300px;
+  background-color: var(--grey-color);
+}
+
+.defaultMovieImg {
+  height: 150px;
+  width: 100px;
+  filter: invert(8%) sepia(11%) saturate(593%) hue-rotate(295deg)
+    brightness(93%) contrast(88%);
+}
+
+.movieImg {
+  height: 450px;
+  width: 300px;
+  border-radius: 15px;
+  object-fit: fill;
+}
+
+.movieInfo {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 15px;
+  background-color: var(--grey-color);
+}
+
+.movieDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 10px;
+}
+
+#aboutMovie {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1#rank {
+  color: var(--red-color);
+}
+
+.movieDescription {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+}
+
+p#description {
+  margin-top: 20px;
+}

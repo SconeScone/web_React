@@ -1,0 +1,102 @@
+:root {
+  --green-color: rgba(42, 157, 160, 1);
+  --grey-color: rgba(237, 237, 237, 1);
+  --light-grey-color: rgb(248, 248, 248);
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --red-color: rgb(187, 68, 48);
+  --brown-color: rgb(35, 31, 32);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+li:last-child {
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Unbounded", sans-serif;
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--grey-color);
+  color: var(--brown-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+header {
+  height: 80px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: var(--green-color);
+  box-shadow: 0px 10px 10px -10px rgba(34, 60, 80, 0.3);
+}
+
+button {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  width: fit-content;
+  padding: 15px 15px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--red-color);
+  box-shadow: 0px 1px 2px 0px var(--shadow-color);
+}
+
+main {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.main__flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 500px;
+  width: 100%;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+#movieContent {
+  width: 900px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#movieList {
+  width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
